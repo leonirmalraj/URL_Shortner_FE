@@ -107,7 +107,7 @@ export const InputForm = () => {
                 Submit
             </Button>
             { url && <Flex mb={ 2 }>
-                <Input value="https://url-shortner-be-sqor.onrender.com" isReadOnly placeholder="Short Url" />
+                <Input value={ url } isReadOnly placeholder="Short Url" />
                 <Button onClick={ onCopy } ml={ 2 }>
                     { hasCopied ? "Copied" : "Copy" }
                 </Button>
